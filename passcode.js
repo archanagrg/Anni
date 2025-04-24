@@ -21,7 +21,7 @@ function checkCode() {
 
     // ✨ Redirect after short delay
     setTimeout(() => {
-      window.location.href = "/anniversary/";
+    window.location.href = "/anniversary/index.html";
     }, 1500);
 
   } else {
