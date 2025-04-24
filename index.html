@@ -1,137 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Anniversary.css">
-        <title>Our 10th Anniversary</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Code</title>
+  <link rel="stylesheet" href="passcode.css">
+</head>
+<body>
+  <div class="container">
+<img src="kiss.jpg" alt="cute bear blowing kiss" class="lock-icon" style="width: 200px; height: auto;">
+
+
+    <h2>Enter Your Code</h2>
+    <p>Hint: Our Anniversary date (YYYY/MM/DD)</p>
+      
     
-    <body>
-        <audio id="bg-music" autoplay loop>
-            <source src="song.mp3" type="audio/mpeg">
-            
-         </audio>
-          
-          <button id="musicToggle" class="music-toggle">⏸ Pause</button>
-          <p class="instruction">Click the heart!</p>
-          
-     
-        <div class="flower-container">
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-            <span class="flower">🌸</span>
-            <span class="flower">🌼</span>
-            <span class="flower">🌷</span>
-            <span class="flower">🌹</span>
-            <span class="flower">🌻</span>
-        </div>
-        
+    <input type="password" id="codeInput" disabled maxlength="8" />
 
-        <div class="container">
-            <label>
-            <div class="heart">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
-            </div>
-            <input id="messageState" type="checkbox" style="display:none"/>
-            </label>
-            <div class="message">
-               
+    <div class="keypad">
+      <div class="row">
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+      </div>
+      <div class="row">
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+      </div>
+      <div class="row">
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+      </div>
+      <div class="row">
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="clearInput()">✕</button>
+      </div>
+    </div>
 
-                
-                <h1 style="font-family: Cinzel, serif; font-size: 20px; letter-spacing: 1.2px;"> Hi Avi! Our 10th Anniversary ❤️,</h1>
-                <p> 
-                    <span>
-                        &emsp; With you, love feels easy. Safe. Real. You’ve filled my world with a kind of happiness I didn’t know I was missing until you came in my life. Talking to you makes everything feel better. Every laugh, every hug, every little moment with you is a memory I carry till my last day.Thank you for being my favorite part of every day.For being my calm in chaos, my reason to smile, and the one I can always count on.I still get butterflies.And I still look at you and think—how did I get so lucky?
-                    </span>
-                    <br> <br>
-                    <span>
-                        &emsp;I still remember  how big the smile was on my face the night I returned home after hanging out with you for the first time. But time flies so fast hai? just like 2-3 yrs ago you loved me so much and now you just don't care how my day was. From loving me unconditionally for 6 years to disrespecting me infront of your friends. From Video calls even when you play your games in  PC to not wishing me even on my birthday. From dropping me to my hostel when its just 5pm to leaving me alone at 8pm. From comforting me when I overthink to swearing on me through text. From writing long paragraphs in text to unsending messages when it's unseen. From solving the misunderstanding to not giving a fuck. From being proud of having me in your life to hiding our relationship in social media. Ahhhh! We've come a long way right?</span>
-                        <br> <br>
-                        <span>
-                          &emsp; I am willing to lower my ego and say sorry a million times cause I don't want to loose you but the saddest part is you've changed. You made me feel so wanted in the beginning but now I'm begging you to treat me right. Nothing feels real anymore. It's ok if you don't love me anymore, don't care about me anymore. You're the reason I'm strong, you made me able to fight with the reality and made me believe not everything lasts forever. Trust me, nothing hurts more than your favourite person turning into life lesson. I wished things were same as before. I wished your love was same as before. I wished you had never changed.But, Nevermind. No matter where life takes , I hope you continue your aim and fulfill your dreams. Make mummy proud. I'm always proud of you on everything. Love you!
-                    </span>      
-                </p>
-                <br>
-                <div class="sincere">
-                    <p style="font-weight: bold;"> With Love,</p>
-                    <p>Your Baby</p>
-                 </div>
-            </div>
-        </div>
-        
-        <script src="jquery.js"></script>
-        <script src="jquery2.1.js"></script>
-        <script defer src="Anniversary.js"></script>
-        <script>
-            const bgMusic = document.getElementById("bg-music");
-            const toggleBtn = document.getElementById("musicToggle");
-          
-            // Update the button text based on the current state
-            function updateButton() {
-              if (bgMusic.paused) {
-                toggleBtn.innerHTML = "▶️ Play";
-              } else {
-                toggleBtn.innerHTML = "⏸ Pause";
-              }
-            }
-          
-            // Toggle play/pause on click
-            toggleBtn.addEventListener("click", () => {
-              if (bgMusic.paused) {
-                bgMusic.play();
-              } else {
-                bgMusic.pause();
-              }
-              updateButton();
-            });
-          
-            // Update button on initial page load
-            document.addEventListener("DOMContentLoaded", updateButton);
-          </script>
-          
-          
-    </body>
+    <button class="unlock" onclick="checkCode()">Unlock</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="passcode.js"></script>
+
+</body>
 </html>
-
